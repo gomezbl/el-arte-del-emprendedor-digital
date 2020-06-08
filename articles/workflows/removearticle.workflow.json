@@ -1,0 +1,27 @@
+{
+    "container": {
+        "type": "c03",
+        "data": {
+            "headertext": "Eliminar contenido"
+        }
+    },
+    "steps": [
+        {
+            "title": "Confirmar",
+            "elements": [
+                {
+                    "type": "bicon-check",
+                    "data": {
+                        "id": "checktoremovearticle",
+                        "placeholder": "Confirmar eliminar contenido"
+                    },
+                    "validators": [
+                        "ischecked"
+                    ]
+                }
+            ]
+        }
+    ],
+
+    "lastStepActionButtonText" : "Eliminar"
+}

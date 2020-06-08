@@ -1,0 +1,31 @@
+{
+    "container": {
+        "type": "c03",
+        "data": {
+            "headertext": "Añade una nueva estantería"
+        }
+    },
+    "action": {
+        "postComponent": "bookshelfs",
+        "postCommand": "addbookshelf",
+        "redirectAfterSuccess": "/bookshelfs/bookshelfslist",
+        "messageTitleAfterSuccess" : "Nueva estantería añadida",
+        "messageBodyAfterSuccess" : "Se ha añadido una nueva estantería. Puedes incluir en ella libros y tenerlos ordenados.",
+        
+        "data": {
+            "actionButtonText": "Añadir estantería"
+        }
+    },
+    "elements": [
+        {
+            "type": "bicon-input",
+            "data": {
+                "id": "bookshelfname",
+                "placeholder": "Nombre para tu nueva estantería",
+                "icon": "fa fa-book",
+                "type": "input"
+            },
+            "validators": ["notempty", "onlylatin", "bookshelf.noexists" ]
+        }
+    ]
+}

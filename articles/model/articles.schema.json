@@ -1,0 +1,17 @@
+{
+    "entities" : [
+        {
+            "name" : "articles",
+            "fields": [
+                { "name" : "userid", "type" : "string" },
+                { "name" : "title", "type": "string" },
+                { "name" : "subtitle", "type" : "string" },
+                { "name" : "type", "type": "string" },
+                { "name" : "content", "type": "json" },
+                { "name" : "published", "type": "boolean" },
+                { "name" : "created", "type" : "datetime" }
+            ],
+            "indexes": [ ["userid"], ["created"], ["published","created"] ]
+        }
+    ]
+}

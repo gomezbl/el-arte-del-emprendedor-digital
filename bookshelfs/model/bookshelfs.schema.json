@@ -1,0 +1,22 @@
+{
+    "entities" : [
+        {
+            "name" : "bookshelfs",
+            "fields": [
+                { "name" : "name", "type" : "string" },
+                { "name" : "userid", "type" : "key" }
+            ],
+            "indexes": [["userid"]]
+        },
+        {
+            "name" : "bookshelfbooks",
+            "fields": [
+                { "name" : "bookshelfid", "type" : "key" },
+                { "name" : "userid", "type" : "key" },
+                { "name" : "bookid", "type" : "key" },
+                { "name" : "created", "type" : "datetime" }                
+            ],
+            "indexes": [["bookshelfid"], ["bookshelfid", "bookid"], ["bookid"] ]
+        }
+    ]
+}
